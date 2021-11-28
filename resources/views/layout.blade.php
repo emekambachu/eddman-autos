@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="{{ asset('main/css/style.css') }}">
     <!-- Responsive css -->
     <link rel="stylesheet" href="{{ asset('main/css/responsive.css') }}">
+
+    @yield('top-assets')
 </head>
 
 <body>
@@ -120,6 +122,7 @@
                                         <li><a href="{{ url('about') }}">About</a></li>
                                         <li><a href="{{ url('products') }}">Products</a></li>
                                         <li><a href="{{ url('contact') }}">Contact</a></li>
+                                        <li><a href="{{ url('policies') }}">Policies</a></li>
                                         <li class="special-link">
                                             <a href="{{ url('appointment') }}">GET APPOINTMENT</a>
                                         </li>
@@ -170,36 +173,6 @@
                     <li><a href="{{ url('appointment') }}">Appointment</a></li>
                 </ul>
             </div>
-            <div class="ltn__utilize-buttons ltn__utilize-buttons-2">
-                <ul>
-                    <li>
-                        <a href="" title="My Account">
-                            <span class="utilize-btn-icon">
-                                <i class="far fa-user"></i>
-                            </span>
-                            My Account
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="Wishlist">
-                            <span class="utilize-btn-icon">
-                                <i class="far fa-heart"></i>
-                                <sup>3</sup>
-                            </span>
-                            Wishlist
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" title="Shoping Cart">
-                            <span class="utilize-btn-icon">
-                                <i class="fas fa-shopping-cart"></i>
-                                <sup>5</sup>
-                            </span>
-                            Shoping Cart
-                        </a>
-                    </li>
-                </ul>
-            </div>
             <div class="ltn__social-media-2">
                 <ul>
                     <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
@@ -238,9 +211,7 @@
                     <div class="col-md-6 col-12 align-self-center">
                         <div class="ltn__copyright-menu text-end">
                             <ul>
-                                <li><a href="#">Terms & Conditions</a></li>
-                                <li><a href="#">Claim</a></li>
-                                <li><a href="#">Privacy & Policy</a></li>
+                                <li><a href="{{ url('policies') }}">Policies</a></li>
                             </ul>
                         </div>
                     </div>
@@ -268,6 +239,8 @@
 <script src="{{ asset('main/js/plugins.js') }}"></script>
 <!-- Main JS -->
 <script src="{{ asset('main/js/main.js') }}"></script>
+
+@yield('bottom-assets')
 
 </body>
 

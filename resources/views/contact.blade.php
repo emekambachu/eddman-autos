@@ -36,6 +36,7 @@
                         </div>
                         <h3 class="animated fadeIn">Email Address</h3>
                         <p>info@eddmanautos.com</p>
+                        <p>services@eddmanautos.com</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -60,13 +61,14 @@
         </div>
     </div>
 
-    <div class="ltn__contact-message-area mb-120 mb--100">
+    <div class="ltn__contact-message-area" style="margin-bottom: 100px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="ltn__form-box contact-form-box box-shadow white-bg">
                         <h4 class="title-2">Send us a message</h4>
-                        <form id="contact-form" action="" method="post">
+                        <form id="contact-form" data-route="{{ route('contact.submit') }}" method="post">
+                            @csrf
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="input-item input-item-name ltn__custom-icon">
@@ -80,34 +82,41 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="input-item">
-                                        <select class="nice-select" style="display: none;">
+                                        <select class="nice-select" name="service">
                                             <option>Select Service Type</option>
-                                            <option>Car Repair </option>
-                                            <option>Engine Repairing </option>
-                                            <option>Oil Change</option>
-                                            <option>Car Wash</option>
-                                        </select><div class="nice-select" tabindex="0"><span class="current">Select Service Type</span><ul class="list"><li data-value="Select Service Type" class="option selected">Select Service Type</li><li data-value="Car Repair" class="option">Car Repair </li><li data-value="Engine Repairing" class="option">Engine Repairing </li><li data-value="Oil Change" class="option">Oil Change</li><li data-value="Car Wash" class="option">Car Wash</li></ul></div>
+                                            <option>Car purchase </option>
+                                            <option>Car sales </option>
+                                            <option>Car parts</option>
+                                            <option>Consultancy</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="input-item input-item-phone ltn__custom-icon">
-                                        <input type="text" name="phone" placeholder="Enter phone number">
+                                        <input type="text" name="mobile" placeholder="Enter phone number">
                                     </div>
                                 </div>
                             </div>
                             <div class="input-item input-item-textarea ltn__custom-icon">
-                                <textarea name="message" placeholder="Enter message"></textarea>
+                                <textarea name="description" placeholder="Enter description"></textarea>
                             </div>
-                            <p><label class="input-info-save mb-0"><input type="checkbox" name="agree"> Save my name, email, and website in this browser for the next time I comment.</label></p>
                             <div class="btn-wrapper mt-0">
-                                <button class="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">get an free service</button>
+                                <button id="submit-contact-btn"
+                                        class="btn theme-btn-1 btn-effect-1 text-uppercase"
+                                        type="submit">Submit</button>
                             </div>
-                            <p class="form-messege mb-0 mt-20"></p>
                         </form>
+                        <p class="form-messege mb-0 mt-20 p-2"></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+@endsection
 
+@section('bottom-assets')
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+    <script src="{{ asset('custom/js/submissions.js') }}"></script>
 @endsection
