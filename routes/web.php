@@ -67,7 +67,7 @@ Route::post('contact/submit', function (Request $request){
     Mail::send('emails.contact', $data,
         static function ($message) use ($data) {
             $message->from('info@eddmanautos.com', 'Eddman Autos');
-            $message->to($data['email'], $data['name']);
+            $message->to('services@eddmabautos.com', 'Eddman Autos');
             $message->replyTo('info@eddmanautos.com', 'Eddman Autos');
             $message->subject('Message from '.$data['name']);
         });
@@ -118,7 +118,7 @@ Route::post('appointment/submit', function (Request $request){
     Mail::send('emails.contact', $data,
         static function ($message) use ($data) {
             $message->from('info@eddmanautos.com', 'Eddman Autos');
-            $message->to($data['email'], $data['name']);
+            $message->to('services@eddmabautos.com', 'Eddman Autos');
             $message->replyTo('info@eddmanautos.com', 'Eddman Autos');
             $message->subject('Appointment for '.$data['name']);
         });
@@ -136,3 +136,7 @@ Route::get('policies', function () {
 Route::get('terms', function () {
     return view('terms');
 });
+
+// Github Deployment
+// Must disable csrf in Http/Middleware/VerifyCsrfToken
+Route::post('github/deploy', 'GithubDeploymentController@deploy');
