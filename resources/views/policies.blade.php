@@ -59,7 +59,7 @@
                     <div class="about-us-info-wrap">
                         <div class="section-title-area ltn__section-title-2">
                             <h1 class="">Tax policy</h1>
-                            <p>In accordance with applicable state and local laws, we are required to charge sales tax. BuyAutoParts.com does not benefit from the collection of sales taxes and we remit the taxes collected directly to the appropriate taxing jurisdiction.<br>
+                            <p>In accordance with applicable state and local laws, we are required to charge sales tax. Eddman Autos does not benefit from the collection of sales taxes and we remit the taxes collected directly to the appropriate taxing jurisdiction.<br>
                                 As a rule, it is the laws of the state of delivery that determine whether sales tax will be due on your transaction. Taxes that appear in your online order confirmation are estimated. The actual taxes charged to your credit card will be calculated based on the applicable state and local sales taxes when your order is shipped.</p>
                         </div>
                     </div>
