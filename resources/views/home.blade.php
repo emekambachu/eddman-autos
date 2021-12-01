@@ -148,7 +148,7 @@
                                 <img src="{{ asset('main/img/icons/7.png') }}" alt="Icon Image">
                             </div>
                             <div class="call-us-info">
-                                <p>Call us 24/7. We can answer for <a href="" class="ltn__secondary-color text-decoration"><strong>all your questions</strong></a>.</p>
+                                <p>Call us 24/7. We can answer all your questions.</p>
                                 <h2><a href="tel:09064110019">09064110019, </a> <small> or </small> <a href="tel:09130917401">09130917401</a></h2>
                             </div>
                         </div>
@@ -167,7 +167,7 @@
                     <div class="why-choose-us-info-wrap">
                         <div class="section-title-area ltn__section-title-2">
                             <h6 class="section-subtitle ltn__secondary-color">// Why Choose Us</h6>
-                            <h1 class="section-title">Your satisfaction Is Our First Priority<span>.</span></h1>
+                            <h1 class="section-title">Your satisfaction Is Our Priority<span>.</span></h1>
                         </div>
                         <div class="row">
                             <div class="col-lg-12 col-md-6">
@@ -1126,7 +1126,7 @@
                         </div>
                         <div class="section-title-in">
                             <h6 class="section-subtitle ltn__secondary-color">// Why Choose Us</h6>
-                            <h1 class="section-title">Get Extra Benifits<span>.</span></h1>
+                            <h1 class="section-title">Get Extra Benefits<span>.</span></h1>
                         </div>
                     </div>
                 </div>
@@ -1179,7 +1179,7 @@
                                     <span><i class="icon-car-parts-7"></i></span>
                                 </div>
                                 <div class="ltn__feature-info">
-                                    <h2><a href="">Tires Repair</a></h2>
+                                    <h2><a href="">Tyre Repairs</a></h2>
                                 </div>
                             </div>
                         </div>

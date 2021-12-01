@@ -41,7 +41,8 @@
                         <div class="ltn__top-bar-menu">
                             <ul>
                                 <li>
-                                    <a href="mailto:info@eddmanautos.com?Subject=Inquiry"><i class="icon-mail"></i> info@eddmanautos.com</a>
+                                    <a href="mailto:info@eddmanautos.com?Subject=Inquiry">
+                                        <i class="icon-mail"></i> info@eddmanautos.com</a>
                                 </li>
                                 <li><a href="">
                                         <i class="icon-placeholder"></i> Airport road by Rumuahorlu junction, behind Oando filling station, port harcourt Rivers State. Nigeria</a>
